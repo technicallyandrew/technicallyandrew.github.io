@@ -1,9 +1,38 @@
-<html>
- 
+<!-- To Fix:
+1. Organization needs a lot of work.
+2. I still don't fully understand why the fade effect is positioned properly with position:relative active on b3, but totally breaks when I remove it. 
+Currently, I would expect that to not matter since position:relative isn't set for the other box items >.<
+3. Pretty sure there's no reason to have the text-wrapper inside of h2 in order to get the positioning I want, will have to experiment with that later.
+4. Need to make some sort of pre-visualization in After Effects or other editing software so I actually know where this is going. 
+Current Ideas:
+Other interests that appear after "Loves" should have their own unique color or icon. 3D Art could be the Blender logo, 
+photography an instagram logo or camera, and videography the youtube logo or a film reel.
+5. There needs to be some sort of background animation to make things more exciting and less drab. 
+Friendly reminder to future Sean to remember drop-shadows exist and are great to separate items from solid backgrounds.
+6. Add comments to the actual code itself, especially the CSS. This is going to be really confusing to review in the future if I don't.
+DATE: 8/16/22
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Maloba</title>
+  <link rel="stylesheet" href="./portfoliostyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Hey!</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <h1> Hi, I'm Andrew Maloba</h1>
+  <h2>I'm an aspiring <em id="softwaredev">software developer</em></h2>
+  <h2 class="sub">Who also loves -
+    <div class="text-wrapper">
+    <div class="box b1">Videography </div>
+    <div class="box b2">Photography</div>
+    <div class="box b3">3D Art</div>
+  </h2>
+  </div>
 </body>
- 
 </html>
